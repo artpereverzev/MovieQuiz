@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OBj-l6-jmD">
-                                <rect key="frame" x="20" y="114" width="400" height="774"/>
+                                <rect key="frame" x="20" y="134" width="400" height="754"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn2-Wc-WBK">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="20.333333333333332"/>
@@ -38,20 +38,20 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maF-Bp-V73" userLabel="Preview Image">
-                                        <rect key="frame" x="0.0" y="40.333333333333371" width="400" height="600"/>
+                                        <rect key="frame" x="0.0" y="40.333333333333371" width="400" height="599.99999999999989"/>
                                         <color key="backgroundColor" name="YP White"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="maF-Bp-V73" secondAttribute="height" multiplier="2:3" id="Ixj-zW-9Wx"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше, чем 5?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6Y-0S-we0" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="660.33333333333337" width="400" height="33.666666666666629"/>
+                                        <rect key="frame" x="0.0" y="660.33333333333337" width="400" height="13.666666666666629"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" name="YP White"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9PL-co-cgf">
-                                        <rect key="frame" x="0.0" y="714" width="400" height="60"/>
+                                        <rect key="frame" x="0.0" y="694" width="400" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ije-fD-7ou" userLabel="No button">
                                                 <rect key="frame" x="0.0" y="0.0" width="190" height="60"/>
@@ -102,8 +102,8 @@
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OBj-l6-jmD" secondAttribute="bottom" id="cgh-gq-uKK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="OBj-l6-jmD" secondAttribute="top" constant="10" id="dGz-gz-laT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBj-l6-jmD" secondAttribute="trailing" constant="20" id="okp-y6-g0P"/>
+                            <constraint firstItem="OBj-l6-jmD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pIF-RW-P9q"/>
                             <constraint firstItem="OBj-l6-jmD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r3V-Pd-W23"/>
                         </constraints>
                     </view>
