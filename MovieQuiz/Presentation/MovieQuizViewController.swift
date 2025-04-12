@@ -7,7 +7,7 @@ final class MovieQuizViewController: UIViewController {
     @IBOutlet private weak var indexLabel: UILabel!
     @IBOutlet private weak var questionTitleLabel: UILabel!
     
-    @IBOutlet weak var filmImage: UIImageView!
+    @IBOutlet private weak var filmImage: UIImageView!
     
     @IBOutlet private weak var buttonNo: UIButton!
     @IBOutlet private weak var buttonYes: UIButton!
