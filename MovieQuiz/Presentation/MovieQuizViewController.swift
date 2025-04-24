@@ -16,7 +16,7 @@ final class MovieQuizViewController: UIViewController {
     
     private var correctAnswers: Int = 0
     
-    // Mock data init
+    // Mock data init starts here
     private let questions: [QuizQuestion] = [
         QuizQuestion(
             image: "The Godfather",
