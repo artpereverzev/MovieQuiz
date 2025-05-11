@@ -64,7 +64,7 @@ final class StatisticService: StatisticServiceProtocol {
         guard totalAnswers > 0 else { return 0 }
         return Double(correctAnswers) / Double(totalAnswers) * 100
     }
-
+    
     func store(correct count: Int, total amount: Int) {
         correctAnswers += count
         totalAnswers += amount
