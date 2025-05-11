@@ -44,7 +44,7 @@
                                             <constraint firstAttribute="width" secondItem="maF-Bp-V73" secondAttribute="height" multiplier="2:3" id="Ixj-zW-9Wx"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше, чем 5?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6Y-0S-we0" userLabel="Question Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6Y-0S-we0" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="660.33333333333337" width="400" height="13.666666666666629"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" name="YP White"/>
@@ -97,17 +97,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2kr-8x-nqI">
+                                <rect key="frame" x="210" y="468" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
+                            <constraint firstItem="2kr-8x-nqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dcn-BQ-cql"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OBj-l6-jmD" secondAttribute="bottom" id="cgh-gq-uKK"/>
+                            <constraint firstItem="2kr-8x-nqI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kxH-9z-yKx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBj-l6-jmD" secondAttribute="trailing" constant="20" id="okp-y6-g0P"/>
                             <constraint firstItem="OBj-l6-jmD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pIF-RW-P9q"/>
                             <constraint firstItem="OBj-l6-jmD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r3V-Pd-W23"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="2kr-8x-nqI" id="joU-zC-aSJ"/>
                         <outlet property="buttonNo" destination="ije-fD-7ou" id="J9e-pg-0q5"/>
                         <outlet property="buttonYes" destination="oCl-QU-s0h" id="oun-Fs-jbD"/>
                         <outlet property="filmImage" destination="maF-Bp-V73" id="exR-eX-9PA"/>
