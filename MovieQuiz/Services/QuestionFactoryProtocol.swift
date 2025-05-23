@@ -6,6 +6,8 @@
 //
 
 protocol QuestionFactoryProtocol {
+    var isDataLoaded: Bool { get set }
+    
     func requestNextQuestion()
     func loadData()
 }
